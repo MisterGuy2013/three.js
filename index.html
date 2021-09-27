@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>3d thing</title>
+		<style>
+			body { margin: 0; }
+		</style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script>
+    <script src="js/noise.js"></script>
+    <script src="js/orbitadd.js"></script>
+    <script src="js/OBJ.js" ></script>
+    <script src="js/gltf.js" ></script>
+    <script src="js/mtl.js" ></script>
+    <script src="js/dds.js"></script>
+    <script src="js/gui.js"></script>
+    <script src="js/cannon.js"></script>
+    
+    <script type="text/javascript" src="js/engine.js"></script>
+    <script src='js/virtualjoystick.js'></script>
+    <script src="js/ammo.js"></script>
+    <script src="js/physi.js"></script>
+    <script src="js/physi_work.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/Terrain.min.js"></script>
+    <script type="text/javascript" src="js/goodPhysics.js"></script>
+    <script src="js/dec.js"></script>
+    <script src="js/track.js"></script>
+    <script src="js/smooth.js"></script>
+    <script src="js/helper.js"></script>
+    
+
+
+
+	</head>
+	<body>
+    
+		
+    <div id="viewport"></div>
+    <div id="webgl-container"></div>
+    
+
+
+    <script src="js/cube.js"></script>
+    <script src="js/line.js"></script>
+    <script src="js/sun.js"></script>
+    <script src="js/worldcube.js"></script>
+    <script src="js/moving cube.js"></script>
+    <script src="js/orbit_sun.js"></script>
+    <script src="js/world.js"></script>
+    <script src="js/model.js" ></script>
+    <script src="js/model2.js" ></script>
+    <script src="js/model3.js"  ></script>
+    <script src="js/model4.js"  ></script>
+    <script src="js/ground.js"  ></script>
+    <script src="js/oldGround.js"  ></script>
+     <script src="js/physics.js"  ></script>
+     <script type="text/javascript" src="js/physicsCar.js"></script>
+     
+     <script type="text/javascript" src="js/newPhysicsCar.js"></script>
+      
+
+     <script type="text/javascript" src="js/worldcube.js"></script>
+     <script type="text/javascript" src="js/trueGround.js"></script>
+
+     <!<script type="text/javascript" src="js/newGround.js"></script>
+     <script type="text/javascript" src="js/rocketCar.js"></script>
+     <!<script type="text/javascript" src="js/bookmark.js"></script>
+     <div id='container'>
+     
+     
+     
+     <script>// lock scroll position, but retain settings for later
+     
+     
+     $('html, body').css({
+    overflow: 'hidden',
+    height: '100%'
+});
+var scrollPosition = [
+  self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+  self.pageYOffset || document.documentElement.scrollTop  || document.body.scrollTop
+];
+var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
+html.data('scroll-position', scrollPosition);
+html.data('previous-overflow', html.css('overflow'));
+html.css('overflow', 'hidden');
+window.scrollTo(scrollPosition[0], scrollPosition[1]);
+      </script>
+    
+
+    <button onclick="cube()">cube</button>
+    <button onclick="line()">line</button>
+    <button onclick="movingcube()">camera stays on cube</button>
+    <button onclick="sun()">sun light</button>
+    <button onclick="orbitsun()">sun, but you can control the camera</button>
+    <button onclick="badrender()">load a 3d jeep, old and broken</button>
+    <button onclick="landrover()">new model, load two different vehicals</button>
+    <button onclick="oldcube()">old car</button>
+    <button onclick="car()">car game *works*</button>
+    <button onclick="gltf_model()">load a high quality model</button>
+    <button onclick="model_four()">gltf model, press A or D to move wheels</button>
+    <button onclick="ground()">load the ground</button>
+    <button onclick="newGround()">load the new ground</button>
+    <button onclick="physicsCar()">load the car game but with goodish physics</button>
+    <button onclick="goodPhysics()">load a basic car with great physics</button>
+    <button onclick="newCar()">load a great car with great physics</button>
+    <button onclick="trueGround()">load a great car with great physics and you know what just click me</button>
+    </div>
+	</body>
+</html>
